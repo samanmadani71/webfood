@@ -1,6 +1,7 @@
 main {
   background-color: rgb(49, 27, 10);
-  height: 800px;
+  height: 100%;
+  padding-bottom: 2rem;
 }
 
 #latest-products {
