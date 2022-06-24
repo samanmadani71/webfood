@@ -1,58 +1,67 @@
 main {
-    background-color: rgb(49, 27, 10);
-    height: 800px;
+  background-color: rgb(49, 27, 10);
+  height: 800px;
 }
 
 #latest-products {
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 2rem auto;
 }
 
 #img-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 20px;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 main h1 {
-    text-align: center;
-    margin-top: 0;
-    padding: 30px 0;
-    color: rgb(204, 166, 12);
-    font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+  padding: 30px 0;
+  color: rgb(204, 166, 12);
+  font-size: 3rem;
 }
 
 #img-container li {
-    list-style: none;
-    text-align: center;
-    background-color: beige;
-    border-radius: 8px;
-    overflow: hidden;
-    padding-bottom: 20px;
+  text-align: center;
+  background-color: beige;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
 }
 
 #img-container img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 #img-container h2 {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .btn {
-    margin: 40px auto;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: rgb(226, 155, 13);
-    color: white;
-    border-radius: 4px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(226, 155, 13);
+  color: white;
+  border-radius: 4px;
 }
 .btn:hover {
-    background-color: rgb(221, 134, 34);
+  background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 48rem) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #img-container {
+    grid-template-columns: 100%;
+  }
 }

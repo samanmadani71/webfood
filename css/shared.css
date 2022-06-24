@@ -1,38 +1,109 @@
 body {
-    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
+  font-family: "Open Sans", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
 }
 #main-header {
-    background-color: rgb(20, 7, 4);
+  background-color: rgb(20, 7, 4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 5%;
+  height: 5rem;
+  box-sizing: border-box;
+}
+#main-header nav ul {
+  display: flex;
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#main-header nav a {
+  color: rgb(204, 166, 12);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(249, 202, 13);
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29,26,27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0;
-    padding: 10px 50px;
+    padding: 0 5%;
+    height: 5rem;
     box-sizing: border-box;
 }
-#main-header nav ul{
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#main-header a{
-    color: rgb(204, 166, 12);
-    text-decoration: none;
+#side-drawer li {
+    margin: 1.2rem 0;
 }
 
-#main-header nav a:hover{
-    color: rgb(249, 202, 13);
+#side-drawer a {
     text-decoration: none;
+    color: white;
+    font-size: 2rem;
 }
+
 
 #logo a {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: rgb(204, 166, 12);
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-#main-header nav li{
-    list-style: none;
-    padding: 0 20px;
+#main-header nav li {
+  list-style: none;
+  padding: 0 1rem;
+}
 
+@media (max-width: 48rem) {
+  #main-header nav ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
 }
